@@ -1,0 +1,22 @@
+#:import MDSlider kivymd.slider.MDSlider
+GridLayout:
+    rows:3
+    Button
+        text:"hi man"
+        on_press:
+    Button
+        text:"hello world"
+    BoxLayout:
+        orientation:"horizontal"
+        Button
+        FloatLayout:
+            Button:
+                text:"from float"
+                text_size:self.size
+                pos_hint:{"center_x":0.5,"center_y":0.2}
+                size_hint:0.2,.2
+            Button:
+                text:"from float"
+                text_size:self.size
+                pos_hint:{"center_x":0.9,"center_y":0.2}
+                size_hint:0.2,.2
